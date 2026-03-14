@@ -6,12 +6,11 @@ Extracts `*Messages*.xml` files from Wizard101's `Root.wad` archive into a local
 
 - Python 3.x
 - [`katsuba`](https://github.com/vbe0201/katsuba) — WAD archive reading
-- [`loguru`](https://github.com/Delgan/loguru) — logging
 
 Install dependencies:
 
 ```bash
-pip install katsuba loguru
+pip install katsuba
 ```
 
 ## Usage

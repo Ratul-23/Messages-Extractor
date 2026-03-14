@@ -1,7 +1,5 @@
 import os
 
-from loguru import logger
-
 from katsuba.wad import Archive # type: ignore
 
 
@@ -26,16 +24,16 @@ def get_revision(game_path: str) -> str:
             line: str = revision_file.readline().strip()
 
         if not line:
-            logger.warning('revision.dat is empty: {}', revision_path)
+            print(f'WARNING: revision.dat is empty: {revision_path}')
             return ''
 
         return line
 
     except UnicodeDecodeError:
-        logger.error('revision.dat is not valid UTF-8: {}', revision_path)
+        print(f'ERROR: revision.dat is not valid UTF-8: {revision_path}')
 
     except OSError as exc:
-        logger.error('Failed to read revision.dat: {}', exc)
+        print(f'ERROR: Failed to read revision.dat: {exc}')
 
     return ''
 
@@ -58,7 +56,7 @@ def main() -> None:
         with open(output_path, 'wb') as output_file:
             output_file.write(data)
 
-        logger.info('Extracted file: {}', output_path)
+        print(f'Extracted file: {output_path}')
 
 
 if __name__ == '__main__':
