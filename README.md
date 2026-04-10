@@ -18,7 +18,7 @@ pip install katsuba
 Set `GAME_PATH` in `Main.py` to your Wizard101 installation directory, then run:
 
 ```bash
-python Main.py
+python main.py
 ```
 
 Extracted files are written to `<revision>/messages/`, where `<revision>` is read from `Bin/revision.dat`.
