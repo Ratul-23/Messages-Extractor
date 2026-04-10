@@ -15,7 +15,7 @@ pip install katsuba
 
 ## Usage
 
-Set `GAME_PATH` in `Main.py` to your Wizard101 installation directory, then run:
+Set `GAME_PATH` in `main.py` to your Wizard101 installation directory, then run:
 
 ```bash
 python main.py
