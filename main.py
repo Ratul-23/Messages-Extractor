@@ -7,7 +7,8 @@ GAME_PATH: str = 'C:/ProgramData/KingsIsle Entertainment/Wizard101'
 
 
 def get_revision(game_path: str) -> str:
-    """Reads the game revision string from revision.dat.
+    """
+    Reads the game revision string from revision.dat.
 
     Args:
         game_path: Absolute path to the game's root installation directory.
